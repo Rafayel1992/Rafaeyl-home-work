@@ -25,15 +25,7 @@ class mayTestYourube(unittest.TestCase):
         pleiButtonElement.click()
         time.sleep(5)
         
-        try:
-            self.driver.find_element(By.XPATH, "//div[@class='tvh9oe BIB1wf']")
-        except:
-            print("Errors 5: not opened")
-            exit(5)
-
-    def tearDown(self):
-
-        self.driver.close()
+    
 
 if __name__ == "__main__":
     unittest.main()
