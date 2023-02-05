@@ -25,7 +25,10 @@ class mayTestYourube(unittest.TestCase):
         pleiButtonElement.click()
         time.sleep(5)
         
-    
+   
+    def tearDown(self):
+
+        self.driver.close() 
 
 if __name__ == "__main__":
     unittest.main()
