@@ -24,6 +24,8 @@ class mayTestYourube(unittest.TestCase):
         pleiButtonElement = self.driver.find_element(By.XPATH, "(//*[@class='yt-simple-endpoint style-scope ytd-video-renderer']) [1]")
         pleiButtonElement.click()
         time.sleep(5)
+        
+    
 
 if __name__ == "__main__":
     unittest.main()

@@ -7,9 +7,9 @@ import unittest
 import time
 
 
-class MyTest():
+class MyTest(unittest.TestCeis):
 
-    def simon(self):
+    def setUP(self):
         self.driver = webdriver.Chrome()
         self.driver.delete_all_cookies()
         self.driver.maximize_window()
@@ -39,7 +39,4 @@ class MyTest():
         self.driver.close()
 
 if __name__ == "__main__":
-    test = MyTest()
-    test.simon()
-    test.test_act()
-    test.tearDown()
+   unittest.main()
