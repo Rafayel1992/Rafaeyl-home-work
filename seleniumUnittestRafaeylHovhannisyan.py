@@ -23,7 +23,11 @@ class mayTestYourube(unittest.TestCase):
         serchFildElement.send_keys(Keys.ENTER)
         pleiButtonElement = self.driver.find_element(By.XPATH, "(//*[@class='yt-simple-endpoint style-scope ytd-video-renderer']) [1]")
         pleiButtonElement.click()
-        time.sleep(10)
+         time.sleep(10)
+        stopButtonElement = self.driver.find_element(By.XPATH,"//*[@class='ytp-play-button ytp-button']")
+        stopButtonElement.click()
+        time.sleep(2)
+        
         
    
     def tearDown(self):
